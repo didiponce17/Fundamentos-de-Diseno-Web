@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, Verdana, sans-serif;
+}
+
+/* Header*/
+nav {
+  width: 100%;
+  z-index: 99;
+  background-color: #8bc34a;
+}
+
+.menu-par {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo1 {
+  border-radius: 30%;
+  height: 25%;
+  width: 25%;
+}
+
+.nav ul li {
+  display: inline-block;
+}
+.nav ul li a:before {
+  content: "s";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  background-color: #795548;
+  width: 0%;
+  height: 2px;
+  font-size: 0px;
+  transition: all 0.5s ease;
+}
+.nav ul li a:hover:before {
+  width: 74%;
+}
+.nav ul li a {
+  color: #3a6531;
+  padding: 10px;
+  position: relative;
+  font-size: 15px;
+}
+
+.container-fluid2 {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+/* Banner1*/
+.banner1 {
+  background-image: url("../img/inicio/banner1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.container-fluid3 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #3a6531;
+  background: #fbfff4;
+}
+
+/* Reserva*/
+.reserva {
+  background: #dcedc8;
+  padding: 50px;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px -6px #3a6531;
+  width: 80%;
+}
+
+.reserva .row {
+  margin-top: 30px;
+}
+.reserva form input {
+  padding: 10px;
+  color: #3a6531;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px -6px #3a6531;
+}
+.reserva form textarea {
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  box-shadow: 0px 5px 5px -6px #3a6531;
+  height: 200px;
+}
+.reserva .submit {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 550;
+  background: #8bc34a;
+  color: #fbfff4;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+.reserva .submit:hover {
+  width: 170px;
+}
+
+/*Galeria*/
+.galeria {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  background-color: #fbfff4;
+}
+.galeria.card {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  cursor: pointer;
+}
+.galeria .card img {
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.galeria .card img:hover {
+  transform: scale(1.1);
+}
+
+/* Banner2*/
+.container-fluid5 {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.banner2 {
+  background-image: url("../img/inicio/banner2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/*Footer */
+#footer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #8bc34a;
+}
+
+#footer a {
+  color: #3a6531;
+  padding: 10px;
+  position: relative;
+  font-size: small;
+}
