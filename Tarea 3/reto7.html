@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reto 7</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link href="css/reto7.css" rel="stylesheet" />
+    <link href="favicon.png" rel="icon" />
+  </head>
+  <body>
+    <header class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a href="index.html" class="navbar-brand">
+            <img src="img/logo1.png" alt="Logo1" class="logo1" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link menu-hover"
+                  href="index.html"
+                  style="font-size: 18px"
+                  >Regresar</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container mt-5 mb-5 d-flex justify-content-center">
+      <section class="container fondo pt-5 pb-5">
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <div class="text-center">
+              <!-- carga de la imagen mapeada con ID del mapa -->
+              <img
+                src="img/imgreto7.jpg"
+                usemap="#image-map"
+                class="img-fluid shadow img-thumbnail"
+                alt="partes de la plata"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <h2 class="pb-2">Partes de la Planta</h2>
+            <p class="pt-3">
+              Las partes de una planta son el tallo, las raíces, las hojas, la
+              flor y el fruto. Todos sabemos identificar de un vistazo las
+              distintas partes de la mayoría de las plantas, como el tronco en
+              un árbol o la raíz de cualquiera de ellas. Sin embargo, ¿conoces
+              bien cuáles son todas las partes de las plantas y qué funciones
+              cumplen?
+            </p>
+            <p class="">
+              Puede parecer información básica, pero tanto si lo estás empezando
+              a estudiar ahora como si quieres refrescar tus conocimientos sobre
+              plantas o ampliarlos, te invitamos a conocer las
+              <strong>5 partes de una planta y sus funciones </strong>
+              con este esquema. ¡Seguro que aprendes algo!
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <map name="image-map">
+      <area
+        target="_blank"
+        alt="Haga clic por favor"
+        title="Haga clic por favor"
+        href="https://www.ecologiaverde.com/partes-de-una-planta-y-sus-funciones-2651.html#anchor_5"
+        coords="148,140,52"
+        shape="circle"
+      />
+      <area
+        target="_blank"
+        alt="Haga clic por favor"
+        title="Haga clic por favor"
+        href="https://www.ecologiaverde.com/partes-de-una-planta-y-sus-funciones-2651.html#anchor_3"
+        coords="131,280,50"
+        shape="circle"
+      />
+      <area
+        target="_blank"
+        alt="Haga clic por favor"
+        title="Haga clic por favor"
+        href="https://www.ecologiaverde.com/partes-de-una-planta-y-sus-funciones-2651.html#anchor_4"
+        coords="811,289,52"
+        shape="circle"
+      />
+      <area
+        target=""
+        alt="Haga clic por favor"
+        id="r0"
+        title="Haga clic por favor"
+        class="cursor"
+        coords="725,457,52"
+        shape="circle"
+      />
+      <area
+        target=""
+        alt="Haga clic por favor"
+        id="r1"
+        title="Haga clic por favor"
+        class="cursor"
+        coords="148,583,52"
+        shape="circle"
+      />
+    </map>
+    <footer id="footer">
+      <p>
+        <br />
+        Derechos Reservados <br />
+        Cenfotec 2024
+      </p>
+    </footer>
+
+    <!-- permite la interactividad del mapeo interactivo-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+    <script src="js/jquery.rwdImageMaps.min.js"></script>
+
+    <!-- Permite que los mapas de imágenes se utilicen en un diseño receptivo al recalcular las coordenadas del área para que 
+      coincidan con el tamaño real de la imagen al cargar y cambiar el tamaño de la ventana-->
+    <!-- el plugin se aplicará automáticamente a todas las imágenes con el atributo usemap y hará que los mapas de imágenes sean responsivos.-->
+    <script>
+      $(document).ready(function () {
+        $("img[usemap]").rwdImageMaps();
+      });
+    </script>
+
+    <!-- interactividad Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- programacion -->
+    <script src="js/reto7.js"></script>
+
+    <!-- libreria desplegables -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reto 9</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link href="css/reto9.css" rel="stylesheet" />
+    <link href="favicon.png" rel="icon" />
+  </head>
+  <body>
+    <header class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a href="index.html" class="navbar-brand">
+            <img src="img/logo1.png" alt="Logo1" class="logo1" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link menu-hover"
+                  href="index.html"
+                  style="font-size: 18px"
+                  >Regresar</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="text-center pt-5">
+      <h1 class="display-2 negrita">CENFOTEC</h1>
+    </div>
+
+    <section class="container text-center">
+      <div class="row pt-3">
+        <div class="col-md-6 mb-4">
+          <div class="card p-3 h-100">
+            <h2 class="text-center pb-5 pt-3">Lista Estudiantes</h2>
+            <form class="fuente1">
+              <!-- radios con interaccion de usuario -->
+              <input type="radio" id="radio1" name="r1" class="cursor" />
+              Estudiante 1
+              <br />
+              <input type="radio" id="radio2" name="r1" class="cursor" />
+              Estudiante 2
+              <br />
+              <input type="radio" id="radio3" name="r1" class="cursor" />
+              Estudiante 3
+              <br />
+              <input type="radio" id="radio4" name="r1" class="cursor" />
+              Estudiante 4
+              <br />
+              <div class="pt-5"></div>
+
+              <input type="button" value="Mostrar" onClick="mostrar()" />
+              <input type="button" value="Limpiar" onClick="limpiar()" />
+            </form>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card p-3 h-100">
+            <h2 class="pb-5 pt-3">Matrícula</h2>
+            <form method="post" id="form1" name="form1" class="tam1">
+              <div class="row align-items-center">
+                <div class="col-4">
+                  <div id="img1" class="text-center">
+                    <img
+                      src="img/reto9/img1.jpg"
+                      alt="logo"
+                      class="img-fluid rounded"
+                    />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <input type="checkbox" name="c1" /> Requisito #1<br /><br />
+                  <input type="checkbox" name="c2" /> Requisito #2<br /><br />
+                </div>
+              </div>
+              <hr />
+              <!-- al dar clic al checkbox Requisitos carga la funcion comprobar() -->
+              <input type="checkbox" name="c3" onclick="comprobar()" />
+              Verificar<br /><br />
+              <input
+                type="button"
+                value="Limpiar"
+                onClick="desactivarCheckboxes()"
+              />
+              <p id="demo"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <p>
+        <br />
+        Derechos Reservados <br />
+        Cenfotec 2024
+      </p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/reto9.js"></script>
+    <script src="js/radios.js"></script>
+    <script src="js/checkbox.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
