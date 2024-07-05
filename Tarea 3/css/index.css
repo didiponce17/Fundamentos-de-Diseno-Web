@@ -1,0 +1,69 @@
+body {
+  background-color: #fbfff4;
+  margin: 0;
+  font-family: Arial, Helvetica, Verdana, sans-serif;
+}
+
+nav.navbar {
+  z-index: 99;
+}
+
+.navbar {
+  background-color: #006691;
+}
+
+.nav-link {
+  color: #00f9fb;
+}
+
+#retos {
+  color: #00f9fb;
+}
+
+.retos .card {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  cursor: pointer;
+}
+.retos .card img {
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.retos .card img:hover {
+  transform: scale(1.1);
+}
+
+.fondo-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url("../img/fondo1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.card-container {
+  width: 100%;
+  max-width: 45rem;
+  height: 35rem;
+  border: 2px solid #fafafa10;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.glass-effect {
+  background: #fafafa10;
+  backdrop-filter: blur(0.3rem);
+  -webkit-backdrop-filter: blur(0.3rem);
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  color: #00f9fb;
+  text-align: center;
+  background-color: #006691;
+}

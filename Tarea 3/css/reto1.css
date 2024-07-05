@@ -1,0 +1,80 @@
+body {
+  background-color: #fbfff4;
+  margin: 0;
+  font-family: Arial, Helvetica, Verdana, sans-serif;
+}
+
+nav.navbar {
+  z-index: 99;
+}
+
+.navbar {
+  background-color: #006691;
+}
+
+.nav-link {
+  color: #00f9fb;
+}
+
+#resultados {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+#resultados h4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#resultados table {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#resultados table th,
+#resultados table td {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+#resultados .totales {
+  background-color: #e7f3ff;
+  padding: 10px;
+  font-weight: bold;
+}
+
+#resultados .totales .total-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+#acciones {
+  margin-top: 20px;
+}
+
+.btn {
+  margin-right: 10px;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+
+  bottom: 0;
+  width: 100%;
+  color: #00f9fb;
+  text-align: center;
+  background-color: #006691;
+}
+
+@media (max-width: 768px) {
+  #resultados,
+  #acciones {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,54 @@
+body {
+  background-color: #fbfff4;
+  margin: 0;
+  font-family: Arial, Helvetica, Verdana, sans-serif;
+}
+
+nav.navbar {
+  z-index: 99;
+}
+
+.navbar {
+  background-color: #006691;
+}
+
+.nav-link {
+  color: #00f9fb;
+}
+.container-fluid1 {
+  padding-top: 140px;
+  padding-bottom: 450px;
+}
+.banner {
+  background-image: url("../img/banner1reto6.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btncirculos {
+  padding: 15px;
+  border: none;
+  /*distancia entre ellos*/
+  margin: 15px;
+  border-radius: 50%;
+}
+
+.img img {
+  width: 60%;
+}
+
+.img {
+  padding-top: 20px;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  color: #00f9fb;
+  text-align: center;
+  background-color: #006691;
+}

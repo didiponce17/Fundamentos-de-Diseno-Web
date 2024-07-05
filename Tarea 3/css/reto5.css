@@ -1,0 +1,84 @@
+body {
+  background-color: #fbfff4;
+  margin: 0;
+  font-family: Arial, Helvetica, Verdana, sans-serif;
+  font-size: 22px;
+}
+
+nav.navbar {
+  z-index: 99;
+}
+
+.navbar {
+  background-color: #006691;
+}
+
+.nav-link {
+  color: #00f9fb;
+}
+
+p {
+  font-size: 22px;
+}
+
+.formatos1 {
+  color: #006691;
+}
+
+.inicio {
+  border-bottom: 1px solid #006691;
+}
+
+.logo {
+  padding: 50px 90px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.suzuki {
+  padding: 80px 100px;
+}
+
+.suzuki h1 {
+  letter-spacing: 3px;
+  font-size: 50px;
+  color: #2f34a2;
+}
+
+h2 {
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+h4 {
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+
+select {
+  width: 100%;
+  padding: 3px 20px;
+}
+
+.imagen img {
+  width: 100%;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  color: #00f9fb;
+  text-align: center;
+  background-color: #006691;
+}
+
+@media (max-width: 765px) {
+  .logo img {
+    width: 100%;
+  }
+}

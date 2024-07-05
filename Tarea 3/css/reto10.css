@@ -1,0 +1,93 @@
+body {
+  background-color: #fbfff4;
+  margin: 0;
+  font-family: Arial, Helvetica, Verdana, sans-serif;
+}
+
+nav.navbar {
+  z-index: 99;
+}
+
+.navbar {
+  background-color: #006691;
+}
+
+.nav-link {
+  color: #00f9fb;
+}
+
+h1 {
+  color: #006691;
+}
+
+h1,
+p,
+small,
+label {
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.btn {
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#resultado .card {
+  width: 100%;
+  text-align: center;
+  border-color: #006691;
+}
+
+#resultado .card-img-top {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 3rem; /* Add padding-top to the image */
+}
+
+.pt-5 {
+  padding-top: 3rem;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+#resultado .card-body {
+  text-align: center !important;
+}
+
+#resultado .card-body p {
+  font-size: 20px;
+  text-align: center !important;
+  color: #006691;
+}
+
+#resultado .card-body p strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #000;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #00f9fb;
+  text-align: center;
+  background-color: #006691;
+}
