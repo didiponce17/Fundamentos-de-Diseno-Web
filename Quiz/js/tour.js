@@ -69,7 +69,7 @@ panorama1.add(infospot1_4);
 // contenido de los infospot5
 infospot1_5.addHoverText("Zaanse Schans #6", -120);
 infospot1_5.element.innerHTML =
-  '<div style="background-color: #006691; color: ##fbfff4; text-align: center; border-radius: 3px; padding: 8px; font-size: 14px; width: 190px;">Pueblo #5</div>';
+  '<div style="background-color: #006691; color: ##fbfff4; text-align: center; border-radius: 3px; padding: 8px; font-size: 14px; width: 150px;">Pueblo #5</div>';
 panorama1.add(infospot1_5);
 
 // contenido de los infospot6
