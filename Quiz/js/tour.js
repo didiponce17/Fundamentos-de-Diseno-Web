@@ -43,61 +43,61 @@ panorama1.add(infospot1_9);
 panorama1.add(infospot1_10);
 
 // contenido de los infospot1
-infospot1_1.addHoverText("Visite la panoramica #2", -120);
+infospot1_1.addHoverText("Zaanse Schans #2", -120);
 infospot1_1.element.innerHTML =
   '<div style="background-color: #006691; color: ##fbfff4; text-align: center; border-radius: 3px; padding: 8px; font-size: 14px; width: 150px;">Zaanse Schans</div>';
 panorama1.add(infospot1_1);
 
 // contenido de los infospot2
-infospot1_2.addHoverText("Visite la panoramica #3", -120);
+infospot1_2.addHoverText("Zaanse Schans #3", -120);
 infospot1_2.element.innerHTML =
   '<div style="background-color: #006691; color: ##fbfff4; text-align: center; border-radius: 3px; padding: 8px; font-size: 14px; width: 100px;">Casa #2</div>';
 panorama1.add(infospot1_2);
 
 // contenido de los infospot3
-infospot1_3.addHoverText("Visite la panoramica #4", -215);
+infospot1_3.addHoverText("Zaanse Schans #4", -215);
 infospot1_3.element.innerHTML =
   '<div style="background-color: #006691; color: ##fbfff4; text-align: center; border-radius: 3px; padding: 8px; font-size: 14px; width: 100px;">Bote #3</div>';
 panorama1.add(infospot1_3);
 
 // contenido de los infospot4
-infospot1_4.addHoverText("Visite la panoramica #5", -110);
+infospot1_4.addHoverText("Zaanse Schans #5", -110);
 infospot1_4.element.innerHTML =
   '<div style="background-color: #006691; color: ##fbfff4; text-align: center; border-radius: 3px; padding: 8px; font-size: 14px; width: 100px;">Muelle #4</div>';
 panorama1.add(infospot1_4);
 
 // contenido de los infospot5
-infospot1_5.addHoverText("Visite la panoramica #6", -120);
+infospot1_5.addHoverText("Zaanse Schans #6", -120);
 infospot1_5.element.innerHTML =
   '<div style="background-color: #006691; color: ##fbfff4; text-align: center; border-radius: 3px; padding: 8px; font-size: 14px; width: 190px;">Pueblo #5</div>';
 panorama1.add(infospot1_5);
 
 // contenido de los infospot6
-infospot1_6.addHoverText("Visite la panoramica #7", -140);
+infospot1_6.addHoverText("Zaanse Schans #7", -140);
 infospot1_6.element.innerHTML =
   '<div style="background-color: #006691; color: ##fbfff4; text-align: center; border-radius: 3px; padding: 8px; font-size: 14px; width: 150px;">Fabrica de Quesos #6</div>';
 panorama1.add(infospot1_6);
 
 // contenido de los infospot7
-infospot1_7.addHoverText("Visite la panoramica #8", -120);
+infospot1_7.addHoverText("Zaanse Schans #8", -120);
 infospot1_7.element.innerHTML =
   '<div style="background-color: #006691; color: ##fbfff4; text-align: center; border-radius: 3px; padding: 8px; font-size: 14px; width: 190px;">Molino Aserradero #7</div>';
 panorama1.add(infospot1_7);
 
 // contenido de los infospot8
-infospot1_8.addHoverText("Visite la panoramica #9", -120);
+infospot1_8.addHoverText("Zaanse Schans #9", -120);
 infospot1_8.element.innerHTML =
   '<div style="background-color: #006691; color: ##fbfff4; text-align: center; border-radius: 3px; padding: 8px; font-size: 14px; width: 190px;">Molino de las Especias #8</div>';
 panorama1.add(infospot1_8);
 
 // contenido de los infospot9
-infospot1_9.addHoverText("Visite la panoramica #10", -120);
+infospot1_9.addHoverText("Zaanse Schans #10", -120);
 infospot1_9.element.innerHTML =
   '<div style="background-color: #006691; color: ##fbfff4; text-align: center; border-radius: 3px; padding: 8px; font-size: 14px; width: 100px;">Lago #9</div>';
 panorama1.add(infospot1_9);
 
 // contenido de los infospot10
-infospot1_10.addHoverText("Visite la panoramica #1", -120);
+infospot1_10.addHoverText("Zaanse Schans #1", -120);
 infospot1_10.element.innerHTML =
   '<div style="background-color: #006691; color: ##fbfff4; text-align: center; border-radius: 3px; padding: 8px; font-size: 14px; width: 150px;">Molino Aceitero #10</div>';
 panorama1.add(infospot1_10);
