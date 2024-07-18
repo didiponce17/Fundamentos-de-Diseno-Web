@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*tamaño inicial foto 360*/
+
+#panorama-container {
+  width: 1300px;
+  height: 700px;
+  margin: 0 auto;
+  background-position: center;
+}
+
+body {
+  background-color: #fbfff4;
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  overflow-x: hidden;
+}
+
+nav.navbar {
+  z-index: 99;
+}
+
+.navbar {
+  background-color: #006691;
+}
+
+.nav-link {
+  color: #00f9fb;
+}
+
+header {
+  width: 100%;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.titulo {
+  font-size: 45px;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #00f9fb;
+  text-align: center;
+  background-color: #006691;
+  font-size: 20px;
+}
