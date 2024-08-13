@@ -1,0 +1,440 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  scroll-behavior: smooth;
+  background: #fbfff4;
+}
+
+/*********************  MENU NAV ******************************/
+
+nav {
+  background-color: #8bc34a;
+  box-shadow: 5px 5px 8px #dcedc8;
+}
+
+.nav-item a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #3a6531;
+  margin: 0 10px;
+  transition: all 0.7s ease-in;
+}
+
+.nav-item a:hover {
+  color: #795548;
+  background-color: #dcedc8;
+  border-radius: 5px;
+}
+
+.navigation-wrap .nav-item {
+  padding: 5px 0;
+}
+
+.navbar-toggler {
+  border: 2px solid #795548;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler i {
+  color: #795548;
+  font-size: 27px;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.dropdown-menu {
+  background-color: #fbfff4;
+  border: none;
+}
+
+.btn-reservar {
+  background-color: #3a6531;
+  color: #dcedc8;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-reservar:hover {
+  background-color: #2d4f28;
+  color: #dcedc8;
+}
+
+.btn-reservar:focus {
+  outline: none;
+}
+
+.logo1 {
+  border-radius: 30%;
+  max-height: 125px;
+}
+
+/* Footer  */
+#footer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  color: #3a6531;
+  text-align: center;
+  background-color: #8bc34a;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    font-size: 14px;
+  }
+
+  .logo1 {
+    max-height: 100px;
+  }
+
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-toggler {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #3a6531;
+  }
+
+  .navbar-collapse {
+    justify-content: center !important;
+    margin-top: 10px;
+  }
+
+  .nav-item a {
+    font-size: 16px;
+  }
+}
+
+.fondo {
+  margin-top: 130px;
+  background-color: #dcedc8;
+}
+
+.titulo {
+  font-size: 3.5rem;
+  color: #3a6531;
+}
+
+.boton_regresar {
+  text-align: center;
+}
+
+.boton_regresar .btn {
+  background-color: #3a6531;
+  color: #dcedc8;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.boton_regresar .btn:hover {
+  background-color: #3a6531;
+  color: #dcedc8;
+}
+
+#baguetteBox-overlay {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000000;
+  background-color: #222;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+#baguetteBox-overlay.visible {
+  opacity: 1;
+}
+
+#baguetteBox-overlay .full-image {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  /*poner la galeria en otro fondo*/
+  /*background-color: #e4e4e4;*/
+}
+
+#baguetteBox-overlay .full-image figure {
+  display: inline;
+  margin: 0;
+  height: 100%;
+}
+
+#baguetteBox-overlay .full-image img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+#baguetteBox-overlay .full-image figcaption {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 1.8;
+  white-space: normal;
+  color: #dcedc8;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-family: sans-serif;
+}
+
+#baguetteBox-overlay .full-image:before {
+  content: "";
+  display: inline-block;
+  height: 50%;
+  width: 1px;
+  margin-right: -1px;
+}
+
+/*animacion slider de las fotos*/
+
+#baguetteBox-slider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+  -webkit-transition: left 0.4s ease, -webkit-transform 0.4s ease;
+  transition: left 0.4s ease, -webkit-transform 0.4s ease;
+  transition: left 0.4s ease, transform 0.4s ease;
+  transition: left 0.4s ease, transform 0.4s ease, -webkit-transform 0.4s ease,
+    -moz-transform 0.4s ease;
+}
+
+#baguetteBox-slider.bounce-from-right {
+  -webkit-animation: bounceFromRight 0.4s ease-out;
+  animation: bounceFromRight 0.4s ease-out;
+}
+
+#baguetteBox-slider.bounce-from-left {
+  -webkit-animation: bounceFromLeft 0.4s ease-out;
+  animation: bounceFromLeft 0.4s ease-out;
+}
+
+@-webkit-keyframes bounceFromRight {
+  0%,
+  100% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: -30px;
+  }
+}
+
+@keyframes bounceFromRight {
+  0%,
+  100% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: -30px;
+  }
+}
+
+@-webkit-keyframes bounceFromLeft {
+  0%,
+  100% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: 30px;
+  }
+}
+
+@keyframes bounceFromLeft {
+  0%,
+  100% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: 30px;
+  }
+}
+
+/*botones siguiente y anterior*/
+
+.baguetteBox-button#next-button,
+.baguetteBox-button#previous-button {
+  top: 50%;
+  top: calc(50% - 30px);
+  width: 44px;
+  height: 60px;
+  background-color: #3a6531;
+}
+
+.baguetteBox-button {
+  position: absolute;
+  cursor: pointer;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -moz-border-radius: 15%;
+  border-radius: 15%;
+  background-color: #323232;
+  background-color: rgba(50, 50, 50, 0.5);
+  color: #dcedc8;
+  font: 1.6em sans-serif;
+  -webkit-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
+}
+
+.baguetteBox-button:focus,
+.baguetteBox-button:hover {
+  background-color: rgba(50, 50, 50, 0.9);
+}
+
+.baguetteBox-button#next-button {
+  right: 2%;
+}
+
+.baguetteBox-button#previous-button {
+  left: 2%;
+}
+
+/* boton cerrar*/
+
+.baguetteBox-button#close-button {
+  top: 20px;
+  right: 2%;
+  right: calc(2% + 6px);
+  width: 30px;
+  height: 30px;
+  background-color: #3a6531;
+}
+
+/*posicion por defecto boton X (no quitar) */
+
+.baguetteBox-button svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.baguetteBox-spinner {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+.baguetteBox-double-bounce1,
+.baguetteBox-double-bounce2 {
+  width: 100%;
+  height: 100%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #fbfff4;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: bounce 2s infinite ease-in-out;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+.baguetteBox-double-bounce2 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* scrolltop*/
+.goto-top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  width: 90px;
+  height: 90px;
+}
+
+/* Boton Whats app*/
+.whatsapp-button {
+  position: fixed;
+  bottom: 40px;
+  left: 20px;
+  background-color: #25d366;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebc59;
+}
+
+.whatsapp-button img {
+  width: 30px;
+  height: 30px;
+}

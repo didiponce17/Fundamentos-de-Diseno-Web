@@ -1,0 +1,402 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  scroll-behavior: smooth;
+  background: #fbfff4;
+}
+
+/*********************  MENU NAV ******************************/
+
+nav {
+  background-color: #8bc34a;
+  box-shadow: 5px 5px 8px #dcedc8;
+}
+
+.nav-item a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #3a6531;
+  margin: 0 10px;
+  transition: all 0.7s ease-in;
+}
+
+.nav-item a:hover {
+  color: #795548;
+  background-color: #dcedc8;
+  border-radius: 5px;
+}
+
+.navigation-wrap .nav-item {
+  padding: 5px 0;
+}
+
+.navbar-toggler {
+  border: 2px solid #795548;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler i {
+  color: #795548;
+  font-size: 27px;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.btn-reservar {
+  background-color: #3a6531;
+  color: #dcedc8;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-reservar:hover {
+  background-color: #2d4f28;
+  color: #dcedc8;
+}
+
+.btn-reservar:focus {
+  outline: none;
+}
+
+.dropdown-menu {
+  background-color: #fbfff4;
+  border: none;
+}
+
+.logo1 {
+  border-radius: 30%;
+  max-height: 125px;
+}
+
+.tituloSeccion5 {
+  padding-top: 25px;
+  padding-bottom: 45px;
+  font-size: 60px;
+  color: #3a6531;
+}
+
+.texto1 {
+  color: #795548;
+}
+
+.texto2 {
+  font-size: 1.3rem;
+  color: #795548;
+}
+
+#btnSend {
+  background-color: #3a6531;
+  color: #dcedc8;
+}
+
+.sectionForm {
+  background-color: #fbfff4;
+  margin-top: 150px;
+}
+
+.sectionForm .containerForm {
+  width: 80%;
+  padding: 20px;
+}
+
+.sectionForm .containerForm .formRow {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.sectionForm .containerForm .formRow .colForm {
+  position: relative;
+  width: 100%;
+  padding: 0px 10px;
+  margin: 30px 0px 10px;
+  transition: 0.5s;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: #3a6531;
+  font-weight: bold;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox input,
+.sectionForm .containerForm .formRow .colForm .inputBox.textarea textarea {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  padding: 0px 10px;
+  z-index: 1;
+  color: #3a6531;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox .text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0px 10px;
+  display: block;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox input:focus + .text,
+.sectionForm .containerForm .formRow .colForm .inputBox input:valid + .text {
+  left: -10px;
+  top: -35px;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox .line {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  transition: 0.5s;
+  border-radius: 2px;
+  pointer-events: none;
+  background-color: #dcedc8;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox input:focus ~ .line,
+.sectionForm .containerForm .formRow .colForm .inputBox input:valid ~ .line {
+  height: 100%;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox.textarea {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 10px 0px;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox.textarea textarea {
+  height: 100px;
+  resize: none;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox textarea:focus + .text,
+.sectionForm .containerForm .formRow .colForm .inputBox textarea:valid + .text {
+  left: -10px;
+  top: -35px;
+}
+
+.sectionForm .containerForm .formRow .colForm .inputBox textarea:focus ~ .line,
+.sectionForm .containerForm .formRow .colForm .inputBox textarea:valid ~ .line {
+  height: 100%;
+}
+
+input[type="submit"] {
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background-color: #dcedc8;
+  color: #3a6531;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 2px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  appearance: textfield;
+}
+
+.alertaRoja {
+  color: #ff0000;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.alertaVerde {
+  color: #8bc34a;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* Footer  */
+#footer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  color: #3a6531;
+  text-align: center;
+  background-color: #8bc34a;
+}
+
+/* scrolltop*/
+.goto-top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  width: 90px;
+  height: 90px;
+}
+
+/* Boton Whats app*/
+.whatsapp-button {
+  position: fixed;
+  bottom: 40px;
+  left: 20px;
+  background-color: #25d366;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebc59;
+}
+
+.whatsapp-button img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+  }
+
+  .logo1 {
+    max-height: 100px;
+  }
+
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-toggler {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #3a6531;
+  }
+
+  .navbar-collapse {
+    justify-content: center !important;
+    margin-top: 10px;
+  }
+
+  .nav-item h3 {
+    font-size: 24px;
+    text-align: left;
+    color: #8bc34a;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    font-size: 14px;
+  }
+
+  .logo1 {
+    max-height: 100px;
+  }
+
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-toggler {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #3a6531;
+  }
+
+  .navbar-collapse {
+    justify-content: center !important;
+    margin-top: 10px;
+  }
+
+  .nav-item a {
+    font-size: 16px;
+  }
+
+  .banner-section {
+    height: 50vh;
+    padding: 0 10px;
+  }
+
+  .sectionForm .containerForm {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .sectionForm .containerForm .formRow {
+    grid-template-columns: 1fr;
+  }
+
+  .sectionForm .containerForm .formRow .colForm {
+    margin: 10px 0;
+    padding: 0px 5px;
+  }
+
+  .tituloSeccion5 {
+    font-size: 36px;
+    padding: 15px 0;
+  }
+
+  .texto2 {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .goto-top {
+    width: 60px;
+    height: 60px;
+  }
+
+  .whatsapp-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .whatsapp-button img {
+    width: 20px;
+    height: 20px;
+  }
+}

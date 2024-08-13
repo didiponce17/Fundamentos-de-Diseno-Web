@@ -1,0 +1,53 @@
+/* extra small devices (landscope phones, 576px and down)*/
+
+@media (max-width: 576px) {
+  body {
+    background-color: #78e0e5;
+  }
+  .ilustracion1,
+  .ilustracion2 img {
+    width: 10%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  header h1 {
+    font-size: 18px;
+    color: #c12855;
+  }
+}
+
+/*  small devices (landscope phones, 576px and up)*/
+@media (max-width: 576px) {
+  body {
+    background-color: #bfeb2b;
+  }
+}
+
+/*  medium  devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+  body {
+    background-color: #c894cf;
+  }
+}
+
+/*  large  devices (desktop, 992px and up)*/
+@media (max-width: 992px) {
+  body {
+    background-color: #c12855;
+  }
+}
+
+/* x - large  devices (large desktops, 1200px and up)*/
+@media (max-width: 1200px) {
+  body {
+    background-color: #cc7220;
+  }
+}
+
+/* xx - large  devices (larger desktops, 1200px and up)*/
+@media (max-width: 1400px) {
+  body {
+    background-color: #ffffff;
+  }
+}

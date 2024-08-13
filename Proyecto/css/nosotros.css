@@ -1,0 +1,412 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  scroll-behavior: smooth;
+  background: #fbfff4;
+}
+
+/*********************  MENU NAV ******************************/
+
+nav {
+  background-color: #8bc34a;
+  box-shadow: 5px 5px 8px #dcedc8;
+}
+
+.nav-item a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #3a6531;
+  margin: 0 10px;
+  transition: all 0.7s ease-in;
+}
+
+.nav-item a:hover {
+  color: #795548;
+  background-color: #dcedc8;
+  border-radius: 5px;
+}
+/* hacemos espacio entre cada opcion del menu  */
+
+.navigation-wrap .nav-item {
+  padding: 5px 0;
+}
+
+.navbar-toggler {
+  /* le quitamos el borde que trae por defecto al icono hamburguesa  */
+  border: 2px solid #795548;
+}
+/* le decimos que no tenga sombra el icono del menu hamburguesa  */
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+/* estilo al icono hamburguesa  */
+
+.navbar-toggler i {
+  color: #795548;
+  font-size: 27px;
+}
+/* centra el menu cuando esta en dispositivos mas pequeños  */
+
+.navbar-nav {
+  text-align: center;
+}
+/* Estilos al dropdown */
+/* le damos estilos al menu tipo dropdown  */
+
+.dropdown-menu {
+  background-color: #fbfff4;
+  border: none;
+}
+
+.btn-reservar {
+  background-color: #3a6531;
+  color: #dcedc8;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-reservar:hover {
+  background-color: #2d4f28;
+  color: #dcedc8;
+}
+
+.btn-reservar:focus {
+  outline: none;
+}
+
+.logo1 {
+  border-radius: 30%;
+  max-height: 125px;
+}
+
+.banner-section {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+}
+
+.espacio {
+  padding: 120px 0;
+}
+
+.titulo {
+  font-size: 4.5rem;
+  color: #dcedc8;
+}
+
+.titulos {
+  font-size: 3.5rem;
+  color: #3a6531;
+}
+
+.texto {
+  font-size: 1.3rem;
+  align-items: center;
+  color: #795548;
+}
+
+.subtitulo1 {
+  color: #8bc34a;
+  font-size: 1.1rem;
+}
+
+.subtitulo2 {
+  color: #8bc34a;
+}
+
+.subtitulo3 {
+  font-size: 1.3rem;
+}
+.subtitulo4 {
+  color: #3a6531;
+}
+
+.texto1 {
+  color: #795548;
+}
+
+.video1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+video#videobanner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.video2-container {
+  width: 50%; /* Ajusta el porcentaje según el tamaño deseado */
+  margin: 0 auto; /* Centra el video en la página */
+}
+
+.nosotros_naturama {
+  background-color: #fbfff4;
+  color: #795548;
+}
+
+.quienes_somos {
+  background-color: #dcedc8;
+  color: #795548;
+}
+
+/* Tabs*/
+
+.tab {
+  overflow: hidden;
+  border: 2px solid #3a6531;
+  background-color: #dcedc8;
+  border-radius: 10px;
+}
+
+p {
+  font-size: 20px;
+  text-align: left;
+}
+
+.tam1 {
+  font-size: 24px;
+}
+
+/* controla propiedades de los TABS */
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  color: #795548;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* controla el color sobre los TABS */
+
+.tab button:hover {
+  background-color: #3a6531;
+  color: #dcedc8;
+}
+
+/* controla el color activo de los TABS */
+
+.tab button.active {
+  background-color: #795548;
+  color: #dcedc8;
+}
+
+/* controla el contenido de cada pestaña tab */
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 2px solid #dcedc8;
+  border-top: none;
+  background: #fbfff4;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* El efecto de animación desvanecimiento tarda 2 segundos al entrar a cada pestaña */
+
+.tabcontent {
+  animation: efect1 2s;
+}
+
+.imgvalores {
+  border-radius: 20px;
+  max-height: 400px;
+}
+
+@keyframes efect1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Footer  */
+#footer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  color: #3a6531;
+  text-align: center;
+  background-color: #8bc34a;
+}
+/*tooltip*/
+
+.icon {
+  color: #fbfff4; /* Color para los iconos de Vision y Mision */
+  clip-path: inset(0% round 10px);
+  background-color: #3a6531; /* Fondo hexagonal para los iconos */
+  width: 110px;
+  padding: 25px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tooltip > .tooltip-inner {
+  background-color: #fbfff4; /* Fondo del tooltip */
+  color: #3a6531; /* Color del texto del tooltip */
+  clip-path: ellipse(50% 30% at 50% 50%);
+  padding: 10px;
+  text-align: center;
+}
+
+.owl-prev {
+  position: absolute;
+  top: 23%;
+  left: -4%;
+  background: url("../img/flechas.png") no-repeat;
+}
+
+.owl-next {
+  position: absolute;
+  top: 23%;
+  right: -4%;
+  background: url("../img/flechas.png") no-repeat -39px 0px;
+}
+
+/* configuracion tira */
+
+.owl-carousel {
+  display: none;
+  position: relative;
+  width: 100%;
+  margin: 2% 0 4%;
+}
+
+.owl-carousel .owl-wrapper {
+  display: none;
+  position: relative;
+}
+
+.owl-carousel .owl-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.owl-carousel .owl-wrapper-outer.autoHeight {
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+
+.owl-carousel .owl-item {
+  float: left;
+}
+
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div {
+  cursor: pointer;
+}
+
+.owl-controls {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .footer {
+    position: absolute;
+  }
+
+  .logo1 {
+    max-height: 100px;
+  }
+
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-toggler {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #3a6531;
+  }
+
+  .navbar-collapse {
+    justify-content: center !important;
+    margin-top: 10px;
+  }
+
+  .nav-item h3 {
+    font-size: 24px;
+    text-align: left;
+    color: #8bc34a;
+  }
+}
+
+/* scrolltop*/
+
+.goto-top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  width: 90px;
+  height: 90px;
+}
+
+/* Boton Whats app*/
+.whatsapp-button {
+  position: fixed;
+  bottom: 40px;
+  left: 20px;
+  background-color: #25d366;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebc59;
+}
+
+.whatsapp-button img {
+  width: 30px;
+  height: 30px;
+}

@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: larger;
+}
+
+.fondo-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url("../img/fondo-ld.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 200px;
+  padding-bottom: 80px;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+}
+
+.card-container {
+  width: 35rem;
+  height: 25rem;
+  border: 2px solid #fafafa10;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.glass-effect {
+  background: #fafafa10;
+  backdrop-filter: blur(0.4rem);
+  -webkit-backdrop-filter: blur(0.4rem);
+}
+
+.logo1 {
+  border-radius: 30%;
+  max-height: 100px;
+}
+
+nav.navbar {
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+}
+
+.nav-item h3 {
+  color: #006691;
+  padding: 10px;
+  position: relative;
+}
+
+.nav-item h3 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-toggler.custom-toggler {
+  border-color: transparent;
+}
+
+.navbar-toggler.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%2300f9fb' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.botones-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.btn-estilo {
+  background-color: #cdffff;
+  color: #006691;
+  border-radius: 25px;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilo para el hover de los botones */
+.btn-estilo:hover {
+  background-color: #006691;
+  color: #00f9fb;
+}
+
+/* Footer */
+#footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #00f9fb;
+  text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .fondo-container {
+    padding: 0 10px;
+  }
+
+  .card-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .logo1 {
+    max-height: 80px;
+  }
+
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-toggler {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #00f9fb;
+  }
+
+  .navbar-collapse {
+    justify-content: center !important;
+    margin-top: 2px;
+  }
+
+  .nav-item h3 {
+    font-size: 24px;
+    text-align: left;
+    color: #006691;
+  }
+
+  .botones-container {
+    flex-direction: column; /* Cambia la dirección a columna en móviles */
+    align-items: center; /* Centra los botones horizontalmente */
+    gap: 20px; /* Espacio entre los botones */
+  }
+
+  .btn-estilo {
+    width: 100%; /* Hace que los botones ocupen el 100% del ancho del contenedor */
+    max-width: 300px; /* Opcional: limita el ancho máximo de los botones */
+  }
+}
